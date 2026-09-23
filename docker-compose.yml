@@ -1,8 +1,9 @@
 services:
   web:
     image: notsetonix/devops-webapp:latest
+    platform: linux/amd64
     build: .
     container_name: devops-webapp
     ports:
-      - "5000:5000"
+      - "8080:5000"
     restart: unless-stopped

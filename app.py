@@ -12,7 +12,7 @@ PAGE = """
  input{padding:6px;width:70%} button{padding:6px 12px}
 </style></head>
 <body>
- <h1>DevOps Task Lst</h1>
+ <h1>DevOps Task List</h1>
  <p>Version 2 - auto-deployed by the CI/CD pipeline</p>
  <form method="post">
   <input name="task" placeholder="New task" required>
@@ -34,7 +34,7 @@ def index():
 
 @app.route("/health")
 def health():
-    return jsonify(status="broken")
+    return jsonify(status="ok")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

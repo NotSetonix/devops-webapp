@@ -13,7 +13,7 @@ PAGE = """
 </style></head>
 <body>
  <h1>DevOps Task List</h1>
- <p>Deployed with Docker + GitHub Actions</p>
+ <p>Version 2 - auto-deployed by the CI/CD pipeline</p>
  <form method="post">
   <input name="task" placeholder="New task" required>
   <button type="submit">Add</button>
